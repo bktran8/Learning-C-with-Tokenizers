@@ -9,9 +9,9 @@ int main(void){
     fgets (str, 66, stdin);
     
     ptr = strtok(str, " \n");
-    while (ptr != NULL){
+    while (ptr != '\0'){
         printf("=%s=\n",ptr);
-        ptr = strtok(NULL, " \n");
+        ptr = strtok('\0', " \n");
     }   
    return 0;
         
