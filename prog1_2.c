@@ -23,4 +23,3 @@ int main(void){
    return 0;
 }
 
-//prints letter by letter, number 
