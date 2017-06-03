@@ -28,7 +28,7 @@ int main(void){
 
     ptr = strtok(str, " \n");
     while (ptr != '\0'){
-        if((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'B')){
+        if((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z')){
             printf("STR ");
         }else if(*ptr >= '0' && *ptr <= '9'){
             printf("INT ");
