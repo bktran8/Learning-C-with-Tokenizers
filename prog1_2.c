@@ -5,7 +5,7 @@ int main(void){
     char str[66];
     char *ptr;
     
-    printf("Assignment #1-1, Brenda Tran, bktran8@gmail.com\n");
+    printf("Assignment #1-2, Brenda Tran, bktran8@gmail.com\n");
     
     printf(">");
     fgets(str, 66, stdin);
