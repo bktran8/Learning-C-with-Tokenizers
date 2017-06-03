@@ -25,6 +25,7 @@ int main(void){
                 continue;
         }
     }
+
     ptr = strtok(str, " \n");
     while (ptr != '\0'){
         if((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'B')){
