@@ -32,7 +32,7 @@ int main(void){
                 d++;
             }   
             count--;
-            if (count>21){
+            if (count>20){
                 printf("ERROR! Incorrect number of tokens found.\n");
                 printf(">");
                 fgets(str, 256, stdin);
