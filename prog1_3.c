@@ -6,7 +6,7 @@ int main(void){
     char *ptr;
     int  count=1, b=0;
     
-    printf("Assignment #1-1, Brenda Tran, bktran8@gmail.com\n");
+    printf("Assignment #1-3, Brenda Tran, bktran8@gmail.com\n");
     printf(">");
     fgets(str, 66, stdin);
     
