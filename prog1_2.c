@@ -12,12 +12,11 @@ int main(void){
    
     ptr = strtok(str, " \n");
     while (ptr != '\0'){
-        if(((*ptr >= 'a' && *ptr <= 'z') && *(ptr+1) >= 'a' && *(ptr+1)<= 'z')|| ((*ptr >= 'A' && *ptr <= 'Z') && *(ptr+1) >= 'A' && *(ptr+1)<= 'Z')){
+        if((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z')){
             printf("STR ");
-        }else if(*ptr >= '0' && *ptr <= '9'&& *(ptr+1) >= '0' && *(ptr+1)<= '9'){
+        }else if(*ptr >= '0' && *ptr <= '9'){
             printf("INT ");
-        }else{
-        printf("STR ");
+        
         }
         ptr = strtok('\0', " \n");
     }   
