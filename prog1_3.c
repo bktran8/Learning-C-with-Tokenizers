@@ -15,6 +15,10 @@ int main(void){
             printf("ERROR! Incorrect number of tokens found.\n");
                 continue;
         }
+        if(str[0] == ' '){
+            printf("ERROR! Incorrect number of tokens found.\n");
+                continue;
+        }
             
         while(str[b] != '\0') {
             if(str[b] == ' ' || str[b] == '\n'){
