@@ -7,10 +7,15 @@ int main(void){
     int  count=1, b=0;
     
     printf("Assignment #1-3, Brenda Tran, bktran8@gmail.com\n");
-    printf(">");
-    fgets(str, 66, stdin);
     
     while(str[b]){
+    printf(">");
+    fgets(str, 66, stdin);
+        if (str[0] == '\n'){
+            printf("ERROR! Incorrect number of tokens found.\n");
+                continue;
+        }
+            
         while(str[b] != '\0') {
             if(str[b] == ' ' || str[b] == '\n'){
                 count++;
