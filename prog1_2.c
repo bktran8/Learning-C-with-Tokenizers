@@ -4,6 +4,7 @@
 int main(void){
     char str[66];
     char *ptr;
+    char str1[]="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     
     printf("Assignment #1-2, Brenda Tran, bktran8@gmail.com\n");
     
@@ -15,8 +16,13 @@ int main(void){
         if((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z')){
             printf("STR ");
         }else if(*ptr >= '0' && *ptr <= '9'){
+            if(strpbrk(ptr,str1)){ 
+                printf("STR ");
+            }else if(strchr(ptr,'.')){
+               printf("STR "); 
+            }else{
             printf("INT ");
-        
+            }
         }
         ptr = strtok('\0', " \n");
     }   
