@@ -44,6 +44,7 @@ int main(int argc, char *argv[]){
                 printf("ERROR! Incorrect number of tokens found.\n");
                 printf(">");
                 fgets(str, 256, stdin);
+                i++;
                 continue;
             }
             charcount = 0;
@@ -56,6 +57,7 @@ int main(int argc, char *argv[]){
                     printf("ERROR! Input string too long.\n");
                     printf(">");
                     fgets(str, 256, stdin);
+                    i++;
                     continue;
                 }
         }
