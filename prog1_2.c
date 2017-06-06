@@ -1,17 +1,16 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(void){
-    char str[66];
+int main(){
+    char str[256];
     char *ptr;
     char str1[]="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     
     printf("Assignment #1-2, Brenda Tran, bktran8@gmail.com\n");
-    
     printf(">");
-    fgets(str, 66, stdin);
-   
+    fgets (str, 66, stdin);
     ptr = strtok(str, " \n");
+    
     while (ptr != '\0'){
         if((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z')){
             printf("STR ");
@@ -19,14 +18,14 @@ int main(void){
             if(strpbrk(ptr,str1)){ 
                 printf("STR ");
             }else if(strchr(ptr,'.')){
-               printf("STR "); 
+                printf("STR "); 
             }else{
-            printf("INT ");
+                printf("INT ");
             }
         }
         ptr = strtok('\0', " \n");
     }   
-   printf("\n");
-   return 0;
+    printf("\n");
+    return 0;
 }
 

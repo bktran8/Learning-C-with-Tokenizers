@@ -1,21 +1,34 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <ctype.h>
 
-int main(){
-    char str[256];
-    char *ptr;
-    char str1[]="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    int  count=1;
-    int  charcount = 0;
-    int  b=0;
-    int  d=0;
-    int  strcount;
-    int  intcount;
- 
-    printf("Assignment #1-5, Brenda Tran, bktran8@gmail.com\n");
+char str[256];
+char *ptr;
+char *temp;
+char str1[]="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+int  count=1;
+int  charcount = 0;
+int  b=0;
+int  d=0;
+int  strcount;
+int  intcount;
+int  N;
+int  i=0;
+
+int main(int argc, char *argv[]){
+    printf("Assignment #1-6, Brenda Tran, bktran8@gmail.com\n");
+    if(argc >=3 || argc == 0){
+        printf("ERROR! Program 6 accepts 1 command line argument.\n");
+        return 0;
+    }
+        if((atoi(argv[1])) == 0){
+            printf("ERROR! Expected integer argument.\n");
+            return 0;
+        }
+    int N = (atoi(argv[1]));
     
-    for(;;){
+    while(i<=N){
     printf(">");
     fgets(str, 66, stdin);
         while(str[b]){
@@ -82,6 +95,7 @@ int main(){
      
         }
     }
+    i++;
   }
  return 0;
  }

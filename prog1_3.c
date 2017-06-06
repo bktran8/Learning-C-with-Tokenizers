@@ -1,14 +1,16 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(void){
-    char str[66];
+int main(){
+    char str[256];
     char *ptr;
-    int  count=1, b=0;
+    char str1[]="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    int  count=1;
+    int  b=0;
     
     printf("Assignment #1-3, Brenda Tran, bktran8@gmail.com\n");
     
-    while(str[b]){
+    while(str[b]!= '\0'){
     printf(">");
     fgets(str, 66, stdin);
         if (str[0] == '\n'){
@@ -18,8 +20,8 @@ int main(void){
         if(str[0] == ' '){
             printf("ERROR! Incorrect number of tokens found.\n");
                 continue;
-        }
-            
+        } 
+        count = 1;
         while(str[b] != '\0') {
             if(str[b] == ' ' || str[b] == '\n'){
                 count++;
@@ -34,17 +36,21 @@ int main(void){
                 continue;
         }
     }
-
     ptr = strtok(str, " \n");
     while (ptr != '\0'){
         if((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z')){
             printf("STR ");
         }else if(*ptr >= '0' && *ptr <= '9'){
+            if(strpbrk(ptr,str1)){ 
+                printf("STR ");
+            }else if(strchr(ptr,'.')){
+               printf("STR "); 
+            }else{
             printf("INT ");
+            }
         }
         ptr = strtok('\0', " \n");
-        
     }   
    printf("\n");
-   return 0;  
- }
+   return 0;
+}
