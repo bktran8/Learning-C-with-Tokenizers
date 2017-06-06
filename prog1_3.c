@@ -20,7 +20,7 @@ int main(){
         count++;
         ptr = strtok('\0', " \n");
     }
-            if(str2[0] == '\n' || str2[0] == ' ' ||count>2 ){
+            if(str2[0] == '\n' || str2[0] == ' '||count>2 ){
                 printf("ERROR! Incorrect number of tokens found.\n");
                 count=0;
         }else{
