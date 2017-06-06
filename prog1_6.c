@@ -26,7 +26,7 @@ int main(int argc, char *argv[]){
     }
     int N = (atoi(argv[1]));
    
-   while(b<=N){
+   while(b<N){
    printf(">");
     fgets(str, 256, stdin);
     strcpy(str2,str);
