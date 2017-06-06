@@ -17,12 +17,11 @@ int  b;
 
 int main(int argc, char *argv[]){
     printf("Assignment #1-6, Brenda Tran, bktran8@gmail.com\n");
-    if (strcmp(argv[1],"0")==0){
-        exit(1);
-    }
     if(argc >=3 || argc == 0 || argc ==1){
         printf("ERROR! Program 6 accepts 1 command line argument.\n");
         return 0;
+    }else if (strcmp(argv[1],"0")==0){
+        exit(1);
     }else if((atoi(argv[1])) == 0){
         printf("ERROR! Expected integer argument.\n");
         return 0;
