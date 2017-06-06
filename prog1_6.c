@@ -83,6 +83,7 @@ int main(int argc, char *argv[]){
         ptr = strtok('\0', " \n");
         }
     if(intcount == 2 ||strcount == 2 ){
+        i++;
         printf("ERROR! Expected STR INT.\n");
         }else if (intcount ==1 && strcount ==1){
             i++;
@@ -101,6 +102,5 @@ int main(int argc, char *argv[]){
     }
     i++;
   }
-  i--;
  return 0;
  }
