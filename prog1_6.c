@@ -8,11 +8,12 @@ char *ptr;
 char str1[]="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 char str2[256];
 int  count=1;
-int  charcount = 0;
+int  charcount;
 int  strcount;
 int  intcount;
 int  N;
 int  i;
+int  b;
 
 int main(int argc, char *argv[]){
     printf("Assignment #1-6, Brenda Tran, bktran8@gmail.com\n");
@@ -25,7 +26,7 @@ int main(int argc, char *argv[]){
     }
     int N = (atoi(argv[1]));
    
-    while(i<=N){
+   while(b<=N){
    printf(">");
     fgets(str, 256, stdin);
     strcpy(str2,str);
@@ -88,7 +89,7 @@ int main(int argc, char *argv[]){
         }
     }
   }
-  i++;
+  b++;
   }
  return 0;
  }
