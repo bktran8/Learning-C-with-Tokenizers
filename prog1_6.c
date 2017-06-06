@@ -101,5 +101,6 @@ int main(int argc, char *argv[]){
     }
     i++;
   }
+  i--;
  return 0;
  }
