@@ -41,10 +41,10 @@ int main(int argc, char *argv[]){
             }
             count--;
             if(count>2){
+                i++;
                 printf("ERROR! Incorrect number of tokens found.\n");
                 printf(">");
                 fgets(str, 256, stdin);
-                i++;
                 continue;
             }
             charcount = 0;
@@ -54,10 +54,10 @@ int main(int argc, char *argv[]){
                 }   
             charcount--;
                 if (charcount>20){
+                    i++;
                     printf("ERROR! Input string too long.\n");
                     printf(">");
                     fgets(str, 256, stdin);
-                    i++;
                     continue;
                 }
         }
@@ -85,14 +85,16 @@ int main(int argc, char *argv[]){
     if(intcount == 2 ||strcount == 2 ){
         printf("ERROR! Expected STR INT.\n");
         }else if (intcount ==1 && strcount ==1){
+            i++;
             printf("STR INT\n");
             continue;
         }
     if(intcount==1 && strcount ==0){
+        i++;
         printf("ERROR! Expected STR.\n");
         }else if(intcount == 0 && strcount ==1){
             printf("STR\n");
-        }else{
+        }else{ 
             continue;
      
         }
