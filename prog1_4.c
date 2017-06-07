@@ -17,19 +17,22 @@ int main(){
     printf(">");
     fgets(str, 256, stdin);
     strcpy(str2,str);
+    charcount = 0;
+    i=0;
+    while(str[i] != '\0'){
+        for(i = 0; str[i]; i++){
+        if(str[i] != ' '){
+        charcount++;
+        }
+    }
+    }
+    charcount--;
     ptr = strtok(str, " \n");
     count =0;
     while(ptr != '\0'){
         count++;
         ptr = strtok('\0', " \n");
     }
-    charcount = 0;
-    for(i = 0; str[i]; i++){
-        if(str[i] != ' '){
-        charcount++;
-        }
-    }
-    charcount--;
             if(charcount>21){
                     printf("ERROR! Input string too long.\n");
                     count = 0;
