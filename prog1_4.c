@@ -33,7 +33,7 @@ int main(){
         count++;
         ptr = strtok('\0', " \n");
     }
-            if(charcount>21){
+            if(charcount>20){
                     printf("ERROR! Input string too long.\n");
                     count = 0;
                     charcount=0;
