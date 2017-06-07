@@ -29,14 +29,15 @@ int main(){
         charcount++;
         }
     }
-            if(str2[0] == '\n' || str2[0] == ' '||count>2 ){
-                printf("ERROR! Incorrect number of tokens found.\n");
-                count=0;
-                charcount = 0;
-            }else if (charcount>21){
+    charcount--;
+            if(charcount>21){
                     printf("ERROR! Input string too long.\n");
                     count = 0;
                     charcount=0;
+            }else if (str2[0] == '\n' || str2[0] == ' '||count>2 ){
+                printf("ERROR! Incorrect number of tokens found.\n");
+                count=0;
+                charcount = 0;
             
             }else{
         ptr = strtok(str2, " \n");
