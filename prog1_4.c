@@ -21,10 +21,8 @@ int main(){
     i=0;
     while(str[i] != '\0'){
         for(i = 0; str[i]; i++){
-        if(str[i] != ' '){
         charcount++;
         }
-    }
     }
     charcount--;
     ptr = strtok(str, " \n");
