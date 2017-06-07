@@ -1,4 +1,4 @@
-### H2 Overview
+### Overview
 This project was essentially an introduction to C language and its syntax. Each program was built off of the previous, with minor additional instructions added to the next. The following programs specifically focused on tokenization by specifiying delimiters, in this case spaces, and implementing loops/condition statements to successfully execute the tasks.  
 
 **1. prog1_1.c**
